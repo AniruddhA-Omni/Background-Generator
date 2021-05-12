@@ -22,8 +22,8 @@ const login = () =>{
     while (c>0){
         if (!((username === usr)&&(password === psd))){
             window.alert(`WRONG DETAILS ENTERED!!!!!\n You have ${c} tries left!!!!`);
+            c--;
             login();
-		c--;
         }
     }
     if (c === 0){
