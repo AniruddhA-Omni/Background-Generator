@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    margin: 0px;
+    background: linear-gradient(to right,red,cyan);
+}
+header{
+    background-color: rgb(33, 43, 43);
+    color: rgb(234, 250, 250);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.container{
+    display: block;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    opacity: 0.6;
+    margin: 30px;
+    padding: 5px;
+    word-spacing: 0.2em;
+}
+.container p{
+    font-size: 17px;
+    font-weight: bolder;
+    font-family:monospace
+}
+
+.color1, .color2{
+    padding: 1px;
+    border-radius: 3px;
+    display: inline-flex;
+    
+
+}
+
+input[type ="color"]:hover{
+    cursor: pointer;
+    transform: scaleX(1.1);
+}
+
+.container:hover{
+    transform: scale(1.01);
+    opacity: 0.8;
+}
