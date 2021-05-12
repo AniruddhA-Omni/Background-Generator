@@ -2,7 +2,6 @@ var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
-var c = 3;
 
 function setGradient() {
 	body.style.background = 
@@ -19,15 +18,8 @@ const login = () =>{
     let usr = window.prompt("Enter Username: ");
     let psd = Number(window.prompt("Enter password: "));
     const {username,password} = user;
-    while (c>0){
-        if (!((username === usr)&&(password === psd))){
-            window.alert(`WRONG DETAILS ENTERED!!!!!\n You have ${c} tries left!!!!`);
-            c--;
-            login();
-        }
-    }
-    if (c === 0){
-        window.alert("We are closing due to security reasons!!!");
+    if (!((username === usr)&&(password === psd))){
+        window.alert("Wrong Details Entered!!!!");
         window.close();
     }
 }
